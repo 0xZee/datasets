@@ -1,2 +1,2 @@
 # 📑_datasets
-list of Datasets for ML and RAG stuff
+List of Datasets for ML and RAG stuff
