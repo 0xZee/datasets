@@ -21,7 +21,11 @@ def csv_to_nodes(csv_path):
     
     # Iterate through each row
     for _, row in df.iterrows():
-        text = str(row.get('raw', '\n'))  
+        text_lines = []
+        for column, value in row.items():
+            text_lines.append(f"{column} :\t{value}")
+        
+        text = "\n".join(text_lines)
         
         # Create metadata dictionary
         metadata = {
