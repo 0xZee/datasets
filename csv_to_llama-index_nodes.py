@@ -18,6 +18,9 @@ def csv_to_nodes(csv_path):
     
     # List to store nodes
     nodes = []
+
+    # Convert rows of the CSV into Document objects
+    #documents = [Document(text=row.to_string()) for _, row in df.iterrows()]
     
     # Iterate through each row
     for _, row in df.iterrows():
